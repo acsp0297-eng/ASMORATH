@@ -1,0 +1,132 @@
+
+        /* --- Neo-Brutalism Variables --- */
+        :root {
+            --color-main: #FFDD00;   /* Bright Yellow */
+            --color-accent: #FF3366; /* Hot Pink */
+            --color-sec: #00AAFF;    /* Electric Blue */
+            --color-dark: #121212;
+            --shadow-mobile: 4px 4px 0px 0px #000;
+            --shadow-desktop: 8px 8px 0px 0px #000;
+        }
+
+        body {
+            font-family: 'Space Mono', monospace;
+            background-color: var(--color-main);
+            color: var(--color-dark);
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        h1, h2, h3, .brand-font {
+            font-family: 'Archivo Black', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* --- Components --- */
+        
+        .neo-box {
+            background: white;
+            border: 3px solid black;
+            box-shadow: var(--shadow-mobile);
+            transition: transform 0.1s ease;
+        }
+
+        @media (min-width: 768px) {
+            .neo-box {
+                border-width: 4px;
+                box-shadow: var(--shadow-desktop);
+            }
+            .neo-box:hover {
+                transform: translate(-2px, -2px);
+                box-shadow: 12px 12px 0px 0px #000;
+            }
+        }
+
+        .neo-btn {
+            background: var(--color-accent);
+            color: white;
+            border: 3px solid black;
+            box-shadow: 2px 2px 0px 0px #000;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.1s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .neo-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px #000;
+        }
+
+        @media (min-width: 768px) {
+            .neo-btn {
+                border-width: 4px;
+                box-shadow: 4px 4px 0px 0px #000;
+            }
+            .neo-btn:hover {
+                transform: translate(-2px, -2px);
+                box-shadow: 6px 6px 0px 0px #000;
+            }
+        }
+
+        /* Export Button Specifics */
+        .export-btn {
+            background: #121212;
+            color: #FFDD00;
+        }
+
+        select, input, button {
+            appearance: none;
+            -webkit-appearance: none;
+            border-radius: 0;
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            background: black;
+            color: white;
+            padding: 8px 0;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .bg-pattern {
+            background-image: radial-gradient(#000 1px, transparent 1px);
+            background-size: 16px 16px;
+        }
+
+        /* Chat Animation */
+        .chat-message {
+            animation: slideIn 0.2s ease-out;
+            margin-bottom: 0.5rem;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-10px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        /* Leaderboard Row Animation */
+        .new-row {
+            animation: flash 1s ease;
+        }
+        @keyframes flash {
+            0% { background-color: var(--color-accent); color: white; }
+            100% { background-color: transparent; color: black; }
+        }
+    
