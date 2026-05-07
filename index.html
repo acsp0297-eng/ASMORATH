@@ -1,82 +1,140 @@
-            <div class="neo-box p-4 bg-blue-300 flex flex-col justify-between items-start h-36 md:h-48 border-4 border-black shadow-[4px_4px_0px_0px_#000]">
-                <span class="text-3xl md:text-5xl font-black text-black">297</span>
-                <span class="text-sm md:text-lg font-bold uppercase tracking-widest text-black">TWITCH FOLLOWERS</span>
-            </div>
-            <div class="neo-box p-4 bg-yellow-300 flex flex-col justify-between items-start h-36 md:h-48 border-4 border-black shadow-[4px_4px_0px_0px_#000] transform rotate-1">
-                <span class="text-3xl md:text-5xl font-black text-black">$52K</span>
-                <span class="text-sm md:text-lg font-bold uppercase tracking-widest text-black">REV SHARE YTD</span>
-            </div>
-            <div class="neo-box p-4 bg-green-300 flex flex-col justify-between items-start h-36 md:h-48 border-4 border-black shadow-[4px_4px_0px_0px_#000] transform -rotate-1">
-                <span class="text-3xl md:text-5xl font-black text-black">38%</span>
-                <span class="text-sm md:text-lg font-bold uppercase tracking-widest text-black">CONVERSION AVG</span>
-            </div>
-            <div class="neo-box p-4 bg-pink-300 flex flex-col justify-between items-start h-36 md:h-48 border-4 border-black shadow-[4px_4px_0px_0px_#000]">
-                <span class="text-3xl md:text-5xl font-black text-black">1.2K</span>
-                <span class="text-sm md:text-lg font-bold uppercase tracking-widest text-black">DEPOSITS</span>
-            </div>
-        </div>
-    </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini Casino</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
 
-    <!-- Skills Section -->
-    <section class="max-w-4xl mx-auto w-full p-4 md:p-8 mb-12">
-        <h2 class="text-3xl md:text-5xl mb-8 bg-black text-white inline-block px-4 py-2 transform -skew-x-6 border-b-4 border-yellow-400">SKILLS</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="neo-box p-6 bg-white border-4 border-black text-center font-bold transform rotate-2 shadow-[2px_2px_0px_0px_#666]">GEMINI CASINO<br><span class="text-2xl">40% REV SHARE</span></div>
-            <div class="neo-box p-6 bg-white border-4 border-black text-center font-bold transform -rotate-2 shadow-[2px_2px_0px_0px_#666]">TWITCH PARTNER<br><span class="text-2xl">LATAM TRAFFIC</span></div>
-            <div class="neo-box p-6 bg-white border-4 border-black text-center font-bold shadow-[2px_2px_0px_0px_#666]">DEPOSIT FUNNELS<br><span class="text-2xl">HIGH ROI</span></div>
-            <div class="neo-box p-6 bg-white border-4 border-black text-center font-bold transform rotate-1 shadow-[2px_2px_0px_0px_#666]">CONTENT SCALE<br><span class="text-2xl">AI AUTOMATION</span></div>
-        </div>
-    </section>
+    .header {
+      background: linear-gradient(90deg, #8e2de2, #4a00e0);
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-    <!-- CTA Section -->
-    <section id="contact" class="max-w-4xl mx-auto w-full p-4 md:p-8 mb-12">
-        <div class="neo-box p-10 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-center">
-            <h2 class="text-4xl md:text-6xl font-black mb-4 transform -skew-x-6">READY TO DOMINATE?</h2>
-            <p class="text-xl mb-8 opacity-90">Gaming affiliate partnerships | 40% rev share specialist | LATAM expert</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="mailto:asmorath@gmail.com" class="neo-btn px-8 py-4 text-lg bg-black border-4 border-white hover:bg-white hover:text-black font-black shadow-[8px_8px_0px_0px_#000] active:translate-y-1 active:shadow-none active:border-0 transition-all">SEND MESSAGE</a>
-                <a href="https://twitch.tv/asmorath" target="_blank" class="neo-btn px-8 py-4 text-lg bg-black border-4 border-white hover:bg-purple-500 font-bold shadow-[8px_8px_0px_0px_#000] active:translate-y-1 active:shadow-none transition-all">TWITCH.tv/ASMORATH</a>
-            </div>
-        </div>
-    </section>
+    .header img.banner {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 12px;
+    }
 
-    <!-- Footer -->
-    <footer class="max-w-7xl mx-auto w-full p-8 border-t-4 border-black">
-        <div class="text-center">
-            <p class="text-xl font-black brand-font mb-2">ASP.GG • GAMING AFFILIATE • LAMESA, TX</p>
-            <p class="text-sm text-gray-600">© 2025 ABIGIL SANCHEZ-PADILLA. BUILT WITH NEO-BRUTALISM. <span class="font-mono text-xs">asmorath@gmail.com</span></p>
-        </div>
-    </footer>
+    .logo {
+      max-width: 200px;
+      margin: 0 auto 10px;
+      display: block;
+    }
 
-    <style>
-        .neo-box { 
-            position: relative; 
-            transition: all 0.3s ease; 
-        }
-        .neo-box:hover { 
-            transform: translate(4px, 4px); 
-            box-shadow: 8px 8px 0 #000; 
-        }
-        .neo-btn { 
-            position: relative; 
-            border: 4px solid #000; 
-            background: white; 
-            font-weight: 900; 
-            text-transform: uppercase; 
-            letter-spacing: 0.1em; 
-            transition: all 0.2s; 
-        }
-        .marquee-container {
-            overflow: hidden; white-space: nowrap; background: black; color: white; font-weight: 900;
-        }
-        .marquee-content {
-            display: inline-block; animation: marquee 20s linear infinite;
-        }
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-        .brand-font { font-family: 'Archivo Black', sans-serif; }
-    </style>
+    .cta-button {
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ffd633;
+      transform: scale(1.05);
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .feature {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1 1 250px;
+      max-width: 300px;
+      transition: all 0.3s ease;
+    }
+
+    .feature:hover {
+      background-color: #222;
+    }
+
+    .feature h3 {
+      margin-top: 0;
+      color: #ffcc00;
+    }
+
+    .footer {
+      margin-top: 60px;
+      padding: 20px;
+      background-color: #111;
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img class="banner" src="https://tkcapp.simdif.com/images/public/sd_6919402a8d965.jpg?no_cache=1763266124" alt="Gemini Casino Banner">
+    <img class="logo" src="https://tkcapp.simdif.com/images/public/sd_6919406a55295.jpg?no_cache=1763266174" alt="Gemini Casino Logo">
+    <a href="https://geminicasino.com/?registration=true&promo=FB888" class="cta-button">Join Now & Claim Bonus</a>
+  </div>
+
+  <div class="content">
+    <h2>Welcome to Gemini Casino</h2>
+    <p>Experience the ultimate online casino adventure. Play your favorite games, unlock exclusive bonuses, and join a community of winners!</p>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Exciting Slots</h3>
+        <p>Spin the reels of hundreds of thrilling slot games with massive jackpots.</p>
+      </div>
+      <div class="feature">
+        <h3>Live Dealers</h3>
+        <p>Enjoy real-time interaction with professional live dealers for the full casino experience.</p>
+      </div>
+      <div class="feature">
+        <h3>Exclusive Bonuses</h3>
+        <p>Get VIP perks, free spins, and deposit matches designed to maximize your play.</p>
+      </div>
+    </div>
+
+    <!-- Omakase AI Widget -->
+    <script>
+      (function(w,d,s,o,f,js,fjs){
+        w['OmakaseAIWidget']=o;w[o]=w[o]||function(){(w[o].q=w[o].q||[]).push(arguments)};
+        js=d.createElement(s),fjs=d.getElementsByTagName(s)[0];
+        js.id=o;js.src=f;js.async=1;
+        if(fjs){fjs.parentNode.insertBefore(js,fjs);}
+        else{d.head.appendChild(js);}
+      }(window,document,'script','OmakaseAI','https://cdn.omakase.ai/loader.min.js?apiKey=oma_live_ITphXnmJVb9BYRCm-OCIyhdJMu01T2B_ETKeinI4_eCnEzHY-sfVkHAOQucks6mz&_=1766645515664'));
+    </script>
+
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Gemini Casino. All rights reserved.
+  </div>
+
 </body>
 </html>
